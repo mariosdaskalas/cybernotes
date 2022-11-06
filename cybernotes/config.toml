@@ -4,13 +4,22 @@ title = 'Cybernotes Thoughts'
 theme = 'hugo-PaperMod'
 
 [[menu.main]]
-identifier = "categories"
-name = "categories"
-url = "/categories/"
+identifier = "Archives"
+name = "Archives"
+url = "/archives/"
 weight = 10
 
 [[menu.main]]
-identifier = "tags"
-name = "tags"
+identifier = "Tags"
+name = "Tags"
 url = "/tags/"
 weight = 20
+
+[[menu.main]]
+identifier = "Search"
+name = "Search"
+url = "posts/search/"
+weight = 30
+
+[outputs]
+home = [ "HTML", "RSS", "JSON" ]
