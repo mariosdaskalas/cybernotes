@@ -1,0 +1,4 @@
+[submodule "cybernotes/public"]
+	path = cybernotes/public
+	url = https://github.com/mariosdaskalas/mariosdaskalas.github.io.git
+	branch = main
