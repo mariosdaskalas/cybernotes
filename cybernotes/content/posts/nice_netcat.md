@@ -1,0 +1,40 @@
+---
+title: "Nice Netcat"
+date: 2022-11-06T13:02:11+02:00
+tags: ["picoCTF", "General Skills"]
+ShowReadingTime: true
+ShowBreadCrumbs: true
+---
+
+Run the following command.
+
+```shell
+nc mercury.picoctf.net 35652
+```
+returns an output of numbers in decimal format. We have to create a python script in order to convert from this decimal output to ASCII text.
+
+First save the output to a file named flag.txt
+
+```shell
+nc mercury.picoctf.net 35652 > flag.txt
+```
+
+After that, we need to place the numbers in the same line using awk.
+
+```shell
+cat flag.txt | awk '{print}' ORS=''
+```
+
+After we got the output in the same line, here is the python script that converts decimal to ASCII text.
+
+```python
+def decimal_to_ascii(decimal_str):
+    
+    string_convert = ""
+    for decimal_char in decimal_str.split(" "):
+        string_convert += chr(int(decimal_char, 10))
+    return string_convert
+
+val = input("Enter decimal format: ")
+print(decimal_to_ascii(val))
+```

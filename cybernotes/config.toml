@@ -1,25 +1,73 @@
-baseURL = 'https://mariosdaskalas.github.io/'
+baseURL = 'http://cybernotes.uk/'
 languageCode = 'en-us'
-title = 'Cybernotes Thoughts'
+title = 'Cybernotes'
 theme = 'hugo-PaperMod'
 
 [[menu.main]]
-identifier = "Archives"
-name = "Archives"
-url = "/archives/"
+identifier = "About"
+name = "ℹ️ About"
+url = "/about/"
 weight = 10
 
 [[menu.main]]
-identifier = "Tags"
-name = "Tags"
-url = "/tags/"
+identifier = "Archives"
+name = "📁 Archives"
+url = "/archives/"
 weight = 20
 
 [[menu.main]]
-identifier = "Search"
-name = "Search"
-url = "posts/search/"
+identifier = "Tags"
+name = "🏷️ Tags"
+url = "/tags/"
 weight = 30
+
+[[menu.main]]
+identifier = "Useful"
+name = "✅ Useful"
+url = "/useful/"
+weight = 40
+
+[[menu.main]]
+identifier = "CTF"
+name = "🚩 CTF"
+url = "/ctf/"
+weight = 40
+
+[[menu.main]]
+identifier = "Blog"
+name = "📝 Blog"
+url = "/posts/"
+weight = 60
+
+[[menu.main]]
+identifier = "Search"
+name = "🔍 Search"
+url = "/search/"
+weight = 70
+
+[[menu.main]]
+identifier = "Linkedin"
+name = "🌐 Linkedin"
+url = "https://www.linkedin.com/company/cybernotes"
+weight = 80
 
 [outputs]
 home = [ "HTML", "RSS", "JSON" ]
+
+[params.fuseOpts]
+isCaseSensitive = false
+shouldSort = true
+location = 0
+distance = 1_000
+threshold = 0.4
+minMatchCharLength = 0
+keys = [ "title", "permalink", "summary", "content" ]
+
+[params]
+ShowBreadCrumbs = true
+ShowCodeCopyButtons = true
+
+ShowPostNavLinks = true
+
+[params.label]
+icon = "https://mariosdaskalas.gr/images/cybernotes.jpg"
