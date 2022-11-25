@@ -1,7 +1,7 @@
 ---
 title: "Python Wrangling"
-date: 2022-11-06T13:02:11+02:00
-tags: ["picoCTF", "General Skills"]
+date: 2022-11-06T13:02:15+02:00
+tags: ["picoCTF 2021", "General Skills"]
 ShowReadingTime: true
 ShowBreadCrumbs: true
 ---

@@ -1,55 +1,68 @@
-baseURL = 'http://cybernotes.uk/'
+baseURL = 'https://www.cybernotes.uk/'
 languageCode = 'en-us'
 title = 'Cybernotes'
 theme = 'hugo-PaperMod'
+paginate = 3
 
 [[menu.main]]
 identifier = "About"
 name = "ℹ️ About"
 url = "/about/"
-weight = 10
+weight = 1
 
 [[menu.main]]
 identifier = "Archives"
 name = "📁 Archives"
 url = "/archives/"
-weight = 20
+weight = 2
 
 [[menu.main]]
 identifier = "Tags"
 name = "🏷️ Tags"
 url = "/tags/"
-weight = 30
+weight = 3
 
 [[menu.main]]
 identifier = "Useful"
 name = "✅ Useful"
 url = "/useful/"
-weight = 40
+weight = 4
+
+[[menu.main]]
+identifier = "Tools"
+name = "🪛 Tools"
+url = "/tools/"
+weight = 5
 
 [[menu.main]]
 identifier = "CTF"
 name = "🚩 CTF"
 url = "/ctf/"
-weight = 40
+weight = 6
+
+[[menu.main]]
+identifier = "Cryptography"
+name = "🔒 Cryptography"
+url = "/cryptography/"
+weight = 7
 
 [[menu.main]]
 identifier = "Blog"
 name = "📝 Blog"
 url = "/posts/"
-weight = 60
+weight = 8
 
 [[menu.main]]
 identifier = "Search"
 name = "🔍 Search"
 url = "/search/"
-weight = 70
+weight = 9
 
 [[menu.main]]
 identifier = "Linkedin"
 name = "🌐 Linkedin"
 url = "https://www.linkedin.com/company/cybernotes"
-weight = 80
+weight = 10
 
 [outputs]
 home = [ "HTML", "RSS", "JSON" ]
@@ -67,7 +80,43 @@ keys = [ "title", "permalink", "summary", "content" ]
 ShowBreadCrumbs = true
 ShowCodeCopyButtons = true
 
+env = "production"
+defaultTheme = "dark"
+ShowReadingTime = true
+displayFullLangName = true
 ShowPostNavLinks = true
+ShowRssButtonInSectionTermList = true
+ShowToc = true
+images = [ "papermod-cover.png" ]
+disableThemeToggle = true
+
+  [params.profileMode]
+  enabled = true
+  title = ""
+  imageUrl = "cybernotes_logo.jpg"
+  imageTitle = "my image"
+
+    [[params.profileMode.buttons]]
+    name = "Archives"
+    url = "archives"
+
+    [[params.profileMode.buttons]]
+    name = "Tags"
+    url = "tags"
+
+  #[params.homeInfoParams]
+  #Title = ""
+  #Content = """
+#Welcome to my blog. Here you will find topics in Cyber Security, that range from Penetration Testing, Bug Bounty, CTF and more.
+#"""
+
+  [[params.socialIcons]]
+  name = "github"
+  url = "https://github.com/mariosdaskalas/mariosdaskalas.github.io"
+
+  [[params.socialIcons]]
+  name = "linkedin"
+  url = "https://www.linkedin.com/company/cybernotes/"
 
 [params.label]
-icon = "https://mariosdaskalas.gr/images/cybernotes.jpg"
+icon = "/static/cybernotes.jpg"

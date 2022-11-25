@@ -1,7 +1,7 @@
 ---
 title: "Nice Netcat"
-date: 2022-11-06T13:02:11+02:00
-tags: ["picoCTF", "General Skills"]
+date: 2022-11-06T13:02:30+02:00
+tags: ["picoCTF 2021", "General Skills"]
 ShowReadingTime: true
 ShowBreadCrumbs: true
 ---
@@ -38,3 +38,11 @@ def decimal_to_ascii(decimal_str):
 val = input("Enter decimal format: ")
 print(decimal_to_ascii(val))
 ```
+
+Name the file decimal.py and run it with the following command. In the prompt enter the decimal numbers.
+
+```shell
+python3 decimal.py
+```
+
+You got the flag!
